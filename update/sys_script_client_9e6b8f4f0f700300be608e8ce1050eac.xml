@@ -13,7 +13,20 @@
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
        if(g_form.isNewRecord()){
-        g_form.setValue('request_by',g_user.userID);
+		   g_form.setValue('request_by', g_user.userID);
+		   
+		   // set current date
+		   var today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth()+1; //January is 0!
+			var yyyy = today.getFullYear();
+		   
+			var hours = today.getHours();
+			var minutes = today.getMinutes();
+		   
+		    var valToday = yyyy + '-' + mm +'-' + dd + ' ' + hours + ':' + minutes + ':00';
+		   
+			g_form.setValue('leave_from_date', valToday);		
     }
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -23,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9e6b8f4f0f700300be608e8ce1050eac</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Onload - New Leave</sys_name>
         <sys_overrides/>
         <sys_package display_value="eLeave" source="x_139317_eleave">db83d5fe0f380300be608e8ce1050ed9</sys_package>
@@ -32,7 +45,7 @@
         <sys_scope display_value="eLeave">db83d5fe0f380300be608e8ce1050ed9</sys_scope>
         <sys_update_name>sys_script_client_9e6b8f4f0f700300be608e8ce1050eac</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-30 07:38:56</sys_updated_on>
+        <sys_updated_on>2017-08-30 07:58:16</sys_updated_on>
         <table>x_139317_eleave_eleave</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>
