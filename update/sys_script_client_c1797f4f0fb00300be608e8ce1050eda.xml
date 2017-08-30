@@ -5,10 +5,10 @@
         <applies_extended>false</applies_extended>
         <condition/>
         <description>Calculate requested time off</description>
-        <field>leave_from_date</field>
+        <field>leave_to_date</field>
         <global>true</global>
         <messages/>
-        <name>Requested Time Off Calculating - From</name>
+        <name>Requested Time Off Calculating - To</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
    if (isLoading || newValue === '') {
@@ -31,26 +31,26 @@
 		}
 	var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
 	
-	g_form.hideFieldMsg('leave_from_date', true);
+	g_form.hideFieldMsg('leave_from_date',true);
 	g_form.showFieldMsg('leave_from_date', diffDays + ' days','info');
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-08-30 10:01:02</sys_created_on>
+        <sys_created_on>2017-08-30 10:53:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f5aba70f0fb00300be608e8ce1050eb2</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Requested Time Off Calculating - From</sys_name>
+        <sys_id>c1797f4f0fb00300be608e8ce1050eda</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Requested Time Off Calculating - To</sys_name>
         <sys_overrides/>
         <sys_package display_value="eLeave" source="x_139317_eleave">db83d5fe0f380300be608e8ce1050ed9</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="eLeave">db83d5fe0f380300be608e8ce1050ed9</sys_scope>
-        <sys_update_name>sys_script_client_f5aba70f0fb00300be608e8ce1050eb2</sys_update_name>
+        <sys_update_name>sys_script_client_c1797f4f0fb00300be608e8ce1050eda</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-08-30 11:00:41</sys_updated_on>
+        <sys_updated_on>2017-08-30 10:59:44</sys_updated_on>
         <table>x_139317_eleave_eleave</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
