@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Calculate requested time off</description>
+        <field>leave_from_date</field>
+        <global>true</global>
+        <messages/>
+        <name>Requested Time Off Calculating</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+   var leaveFromDate = g_form.getValue('leave_from_date');
+   var leaveToDate = g_form.getValue('leave_to_date');
+
+	var date1 = new Date(leaveFromDate);
+	var date2 = new Date(leaveToDate);
+	//var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+	var timeDiff = date2.getTime() - date1.getTime();
+	
+	if(timeDiff < 0)
+		{
+			g_form.showFieldMsg('leave_from_date', 'From Date cannot be bigger than To Date','error');
+			return;
+		}
+	var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+	
+	g_form.showFieldMsg('leave_from_date', diffDays + ' days','info');
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-08-30 10:01:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f5aba70f0fb00300be608e8ce1050eb2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Requested Time Off Calculating</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="eLeave" source="x_139317_eleave">db83d5fe0f380300be608e8ce1050ed9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="eLeave">db83d5fe0f380300be608e8ce1050ed9</sys_scope>
+        <sys_update_name>sys_script_client_f5aba70f0fb00300be608e8ce1050eb2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-08-30 10:12:03</sys_updated_on>
+        <table>x_139317_eleave_eleave</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
