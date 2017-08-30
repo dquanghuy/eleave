@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element extends="task" label="eleave" max_length="40" name="x_139317_eleave_eleave" type="collection">
-        <element label="Approver" max_length="32" name="approver" reference="imp_user" type="reference"/>
+        <element label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
         <element label="Leave From Date" mandatory="true" max_length="40" name="leave_from_date" type="glide_date_time"/>
         <element label="Leave To Date" mandatory="true" max_length="40" name="leave_to_date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="Annual Leave" label="Leave Type" mandatory="true" max_length="40" name="leave_type" type="string">
@@ -17,7 +17,7 @@
                 <element label="OT Reimbursement" sequence="8" value="OT Reimbursement"/>
             </choice>
         </element>
-        <element label="Request By" mandatory="true" max_length="32" name="request_by" reference="imp_user" type="reference"/>
-        <element label="Request For" mandatory="true" max_length="32" name="request_for" reference="imp_user" type="reference"/>
+        <element label="Request By" mandatory="true" max_length="32" name="request_by" reference="sys_user" type="reference"/>
+        <element label="Request For" mandatory="true" max_length="32" name="request_for" reference="sys_user" type="reference"/>
     </element>
 </database>
