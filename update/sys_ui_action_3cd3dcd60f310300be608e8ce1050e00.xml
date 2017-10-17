@@ -7,7 +7,7 @@
         <comments>User can only withdraw a ticket.&#13;
 &#13;
 Change state = 8 (Withdrawn) when withdraw</comments>
-        <condition>current.state == 1 &amp;&amp; gsGetUserID() ==  current.caller_id</condition>
+        <condition>current.state == 1 &amp;&amp; (gs.getUserID() ==  current.caller_id || gs.hasRole("itil_admin"))</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -25,7 +25,20 @@ Change state = 8 (Withdrawn) when withdraw</comments>
         <name>Withdraw</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.state = 8;]]></script>
+        <script><![CDATA[var waitingApprovalState = 1;
+var withdrawState = 8;
+
+if(current.state == waitingApprovalState)
+	{
+		//current.state = withdrawState;
+		current.state.changesTo(withdrawState);
+		gs.info("eLeave Ticket number: " + current.number + " withdraw for " + current.request_for.email);
+	}
+else
+	{
+		// do nothing
+		gs.info("Cannot set Withdraw for " + current.u_requested_for.email);
+	}]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -37,7 +50,7 @@ Change state = 8 (Withdrawn) when withdraw</comments>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3cd3dcd60f310300be608e8ce1050e00</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Withdraw</sys_name>
         <sys_overrides display_value="Update">42df02e20a0a0b340080e61b551f2909</sys_overrides>
         <sys_package display_value="eLeave" source="x_139317_eleave">db83d5fe0f380300be608e8ce1050ed9</sys_package>
@@ -46,7 +59,7 @@ Change state = 8 (Withdrawn) when withdraw</comments>
         <sys_scope display_value="eLeave">db83d5fe0f380300be608e8ce1050ed9</sys_scope>
         <sys_update_name>sys_ui_action_3cd3dcd60f310300be608e8ce1050e00</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-16 04:10:20</sys_updated_on>
+        <sys_updated_on>2017-10-17 08:06:41</sys_updated_on>
         <table>x_139317_eleave_eleave</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
