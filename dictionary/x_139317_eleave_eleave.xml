@@ -19,5 +19,7 @@
         </element>
         <element label="Request By" mandatory="true" max_length="32" name="request_by" reference="sys_user" type="reference"/>
         <element label="Request For" mandatory="true" max_length="32" name="request_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Comment" max_length="4000" name="u_str_leave_comment" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Leave Reason" max_length="40" name="u_str_leave_reason" type="string"/>
     </element>
 </database>

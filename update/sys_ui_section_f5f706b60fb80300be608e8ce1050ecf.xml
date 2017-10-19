@@ -5,13 +5,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>42790aa20f1d4300be608e8ce1050e23</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>b04cbcd30ff14300be608e8ce1050e6e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>request_for</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>0a790aa20f1d4300be608e8ce1050e23</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>b84cbcd30ff14300be608e8ce1050e6e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>leave_type</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>8a790aa20f1d4300be608e8ce1050e23</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>3c4cbcd30ff14300be608e8ce1050e6e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>0e790aa20f1d4300be608e8ce1050e23</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>bc4cbcd30ff14300be608e8ce1050e6e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>request_by</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>8e790aa20f1d4300be608e8ce1050e23</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>304cbcd30ff14300be608e8ce1050e6f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>approver</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>02790aa20f1d4300be608e8ce1050e24</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>b04cbcd30ff14300be608e8ce1050e6f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -89,13 +89,13 @@
             <element>.end_split</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>82790aa20f1d4300be608e8ce1050e24</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>344cbcd30ff14300be608e8ce1050e6f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -103,13 +103,13 @@
             <element>.begin_split</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>06790aa20f1d4300be608e8ce1050e24</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>b44cbcd30ff14300be608e8ce1050e6f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -117,13 +117,13 @@
             <element>leave_from_date</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>86790aa20f1d4300be608e8ce1050e24</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>384cbcd30ff14300be608e8ce1050e6f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -131,13 +131,13 @@
             <element>.split</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>0a790aa20f1d4300be608e8ce1050e24</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>b84cbcd30ff14300be608e8ce1050e6f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -145,13 +145,13 @@
             <element>leave_to_date</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>8a790aa20f1d4300be608e8ce1050e24</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>3c4cbcd30ff14300be608e8ce1050e6f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -159,41 +159,41 @@
             <element>.end_split</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>0e790aa20f1d4300be608e8ce1050e24</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>bc4cbcd30ff14300be608e8ce1050e6f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>short_description</element>
+            <element>u_str_leave_reason</element>
             <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>8e790aa20f1d4300be608e8ce1050e24</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>304cbcd30ff14300be608e8ce1050e70</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>description</element>
+            <element>u_str_leave_comment</element>
             <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-09-22 09:57:46</sys_created_on>
-            <sys_id>02790aa20f1d4300be608e8ce1050e25</sys_id>
+            <sys_created_on>2017-10-19 08:47:16</sys_created_on>
+            <sys_id>b04cbcd30ff14300be608e8ce1050e70</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_139317_eleave_eleave" sys_domain="global" view="Default view">f5f706b60fb80300be608e8ce1050ecf</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-09-22 09:57:46</sys_updated_on>
+            <sys_updated_on>2017-10-19 08:47:16</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

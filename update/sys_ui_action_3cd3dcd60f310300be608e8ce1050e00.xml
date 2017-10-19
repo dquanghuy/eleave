@@ -30,14 +30,17 @@ var withdrawState = 8;
 
 if(current.state == waitingApprovalState)
 	{
-		//current.state = withdrawState;
-		current.state.changesTo(withdrawState);
-		gs.info("eLeave Ticket number: " + current.number + " withdraw for " + current.request_for.email);
+		current.state = withdrawState;
+		current.description = "I have self assigned this incident to myself";
+		//current.state.changesTo(withdrawState);
+		//current.update();
+		gs.info("eLeave Ticket number: " + current.number + " withdraw for " + current.request_for.email + ". State changed to " + current.state + 
+			   ". Description=" + current.description);
 	}
 else
 	{
 		// do nothing
-		gs.info("Cannot set Withdraw for " + current.u_requested_for.email);
+		gs.error("Cannot set Withdraw for " + current.u_requested_for.email);
 	}]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -50,16 +53,16 @@ else
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3cd3dcd60f310300be608e8ce1050e00</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>Withdraw</sys_name>
-        <sys_overrides display_value="Update">42df02e20a0a0b340080e61b551f2909</sys_overrides>
+        <sys_overrides/>
         <sys_package display_value="eLeave" source="x_139317_eleave">db83d5fe0f380300be608e8ce1050ed9</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="eLeave">db83d5fe0f380300be608e8ce1050ed9</sys_scope>
         <sys_update_name>sys_ui_action_3cd3dcd60f310300be608e8ce1050e00</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-17 08:06:41</sys_updated_on>
+        <sys_updated_on>2017-10-19 07:52:37</sys_updated_on>
         <table>x_139317_eleave_eleave</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
