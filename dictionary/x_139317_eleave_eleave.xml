@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="task" label="eleave" max_length="40" name="x_139317_eleave_eleave" sizeclass="11" type="collection">
+    <element extends="task" label="eleave" max_length="40" name="x_139317_eleave_eleave" sizeclass="19" type="collection">
         <element label="Approver" mandatory="true" max_length="32" name="approver" reference="sys_user" type="reference"/>
         <element label="Leave From Date" mandatory="true" max_length="40" name="leave_from_date" type="glide_date_time"/>
         <element label="Leave To Date" mandatory="true" max_length="40" name="leave_to_date" type="glide_date_time"/>
