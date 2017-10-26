@@ -10,9 +10,21 @@
         <script><![CDATA[var GetManager = Class.create();
 GetManager.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	getManager: function() {
+		
+		//var mngId = gs.getUser().getManagerID();
+		
 		var userRecord = new GlideRecord("sys_user");
-		userRecord.get(this.getParameter('sysparm_userID'));
-		return userRecord.sys_id + '';
+		//userRecord.get(this.getParameter('sysparm_userID'));
+		var mngId = userRecord.sys_id;
+		
+		  if(getUserData.get(gs.getUserID()))
+		  {
+			  gs.log(getUserData.manager.manager);
+			  mngId = getUserData.manager.manager;
+		  }
+		
+		//var mng = userRecord.getManagerID();
+		return mngId; //userRecord.sys_id + '' + 
 	},
     type: 'GetManager'
 });]]></script>
@@ -21,7 +33,7 @@ GetManager.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2017-09-29 06:30:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>eb1d19b00f610300be608e8ce1050edc</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>GetManager</sys_name>
         <sys_package display_value="eLeave" source="x_139317_eleave">db83d5fe0f380300be608e8ce1050ed9</sys_package>
         <sys_policy>read</sys_policy>
@@ -29,6 +41,6 @@ GetManager.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="eLeave">db83d5fe0f380300be608e8ce1050ed9</sys_scope>
         <sys_update_name>sys_script_include_eb1d19b00f610300be608e8ce1050edc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-09-29 06:52:03</sys_updated_on>
+        <sys_updated_on>2017-10-26 04:23:36</sys_updated_on>
     </sys_script_include>
 </record_update>
