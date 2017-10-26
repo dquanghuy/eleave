@@ -34,12 +34,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-10-25 08:45:29</sys_created_on>
         <sys_id>8565f7410f820300be608e8ce1050ec7</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-25 08:45:48</sys_updated_on>
+        <sys_updated_on>2017-10-26 08:48:47</sys_updated_on>
         <table>x_139317_eleave_eleave</table>
         <timezone/>
-        <validated>false</validated>
+        <validated>true</validated>
         <workflow display_value="eLeave Approval workflow">e03a8dab0f510300be608e8ce1050ec4</workflow>
     </wf_workflow_version>
     <wf_workflow action="INSERT_OR_UPDATE">
