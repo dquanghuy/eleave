@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Number of days a User have per year.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_139317_eleave.totalAnualLeaveDays</name>
+        <read_roles>x_139317_eleave.eleave_user</read_roles>
+        <suffix>totalAnualLeaveDays</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-26 07:01:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5736a8210f8a0300be608e8ce1050ea9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_139317_eleave.totalAnualLeaveDays</sys_name>
+        <sys_package display_value="eLeave" source="x_139317_eleave">db83d5fe0f380300be608e8ce1050ed9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="eLeave">db83d5fe0f380300be608e8ce1050ed9</sys_scope>
+        <sys_update_name>sys_properties_5736a8210f8a0300be608e8ce1050ea9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-26 07:27:57</sys_updated_on>
+        <type>integer</type>
+        <value>15</value>
+        <write_roles>x_139317_eleave.eleave_user</write_roles>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=5736a8210f8a0300be608e8ce1050ea9"/>
+</record_update>
