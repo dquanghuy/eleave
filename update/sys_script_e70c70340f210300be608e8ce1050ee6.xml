@@ -30,29 +30,37 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {		
 	//GlideDateTime.subtract() 
-				//var diffSeconds = gs.dateDiff(current.leave_from_date, current.leave_to_date, true);
+	//var diffSeconds = gs.dateDiff(current.leave_from_date, current.leave_to_date, true);
+		var gdtFrom = new GlideDateTime(current.leave_from_date.getDisplayValue());
+		var gdtTo = new GlideDateTime(current.leave_to_date.getDisplayValue());
+
+			//var diffSeconds =  Global.GlideDateTime.subtract(gdtFrom, gdtTo);
+			var diffSeconds =  gdtFrom.compareTo(gdtTo);			
 	
-			var diffSeconds = GlideDateTime.subtract(current.leave_from_date, current.leave_to_date);
 			if(diffSeconds > 0)
-				{					
+				{
 					gs.addErrorMessage("From-date cannot be greater than end-date.");
-		current.setAbortAction(true);	
+					current.setAbortAction(true);	
 				}
-	
-	if(current.leave_type == 'Annual Leave')
-		{
-			var totalAnualLeaveDays = gs.getProperty('x_139317_eleave.totalAnualLeaveDays');
-	
-			var diffDays = diffSeconds / 3600;
+			else if(current.leave_type == 'Annual Leave')
+				{
+					var totalAnualLeaveDays = gs.getProperty('x_139317_eleave.totalAnualLeaveDays');
+	                
+					var diffYear = gdtTo.getYearUTC() - gdtFrom.getYearUTC();
+					var diffMonth = gdtTo.getMonthUTC() - gdtFrom.getMonthUTC();
+					var diffDay = gdtTo.getDayOfMonthUTC() - gdtFrom.getDayOfMonthUTC();
+					
+					var diffDays = diffYear * 360 + diffMonth * 30 + diffDay;
 			
 			if(totalAnualLeaveDays < diffDays)
 				{
-		gs.addErrorMessage("Cannot submi ticket with period bigger than Anual Leave Days.");
-		current.setAbortAction(true);										
+					gs.addErrorMessage("Cannot submi ticket with period bigger than Anual Leave Days.");
+					current.setAbortAction(true);										
 				}
-		}
-	
-gs.addInfoMessage("Your ticket has been submitted successfully");
+		} else
+			{
+				gs.addInfoMessage("Your ticket has been submitted successfully");
+			}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -61,7 +69,7 @@ gs.addInfoMessage("Your ticket has been submitted successfully");
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e70c70340f210300be608e8ce1050ee6</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>eLeave Submittion Validation</sys_name>
         <sys_overrides/>
         <sys_package display_value="eLeave" source="x_139317_eleave">db83d5fe0f380300be608e8ce1050ed9</sys_package>
@@ -70,7 +78,7 @@ gs.addInfoMessage("Your ticket has been submitted successfully");
         <sys_scope display_value="eLeave">db83d5fe0f380300be608e8ce1050ed9</sys_scope>
         <sys_update_name>sys_script_e70c70340f210300be608e8ce1050ee6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-26 08:54:31</sys_updated_on>
+        <sys_updated_on>2017-10-27 04:12:05</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
